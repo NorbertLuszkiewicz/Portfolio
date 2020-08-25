@@ -1,0 +1,21 @@
+// Change rem on 10px
+html {
+  font-size: 62.5%;
+}
+// Global font
+body {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 1.6rem;
+}
+// Global Color
+$mainBlue: #79add4;
+$mainRed: #ea6954;
+$mainBackgorund: #111126;
+$mainBackgroundTransparent: rgba(17, 17, 38, 0.8);
+
+//Global font-size
+$xs: 1.8rem;
+$s: 2.6rem;
+$m: 3.2rem;
+$l: 4rem;
+$xl: 6.4rem;

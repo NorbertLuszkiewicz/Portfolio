@@ -1,0 +1,108 @@
+@keyframes logoAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  35% {
+    opacity: 1;
+  }
+
+  65% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes logoAnimation2 {
+  0% {
+    opacity: 0;
+  }
+
+  35% {
+    opacity: 0;
+  }
+
+  65% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.title {
+  font-size: $l;
+  text-align: center;
+  margin: auto;
+}
+
+.text {
+  font-size: $xs;
+  line-height: 1.2;
+  padding: 10px 5%;
+}
+
+.title-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 15px auto;
+}
+
+.logo-wrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  opacity: 1;
+  animation: logoAnimation 2.5s infinite alternate;
+}
+
+.logo2 {
+  @extend .logo;
+  opacity: 0;
+  animation: logoAnimation2 2.5s infinite alternate;
+}
+
+.fab {
+  font-size: $xl;
+  padding: 5px;
+}
+
+.fa-html5 {
+  color: #f16529;
+}
+
+.fa-css3-alt {
+  color: #2d98d1;
+}
+
+.fa-js {
+  color: #f0db4f;
+}
+
+.fa-react {
+  color: #61dafb;
+}
+
+.fa-git-alt {
+  color: #e94e31;
+}
+
+.fa-sass {
+  color: #c76495;
+}
+
+.fa-npm {
+  color: #c53735;
+}

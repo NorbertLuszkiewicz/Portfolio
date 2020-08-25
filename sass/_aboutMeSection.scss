@@ -1,0 +1,22 @@
+.about-me {
+  padding: 100px 5%;
+  display: flex;
+  flex-flow: column;
+
+  &__color-wrapper {
+    max-width: 500px;
+    margin: 30px auto 0;
+    padding: 10px;
+    border-radius: 20px;
+    background: $mainRed;
+    color: white;
+  }
+
+  &__color-wrapper--blue {
+    background-color: $mainBlue;
+  }
+
+  &__photo {
+    width: 100%;
+  }
+}
