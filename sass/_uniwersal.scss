@@ -74,6 +74,33 @@
   animation: logoAnimation2 2.5s infinite alternate;
 }
 
+.button {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $xs;
+  width: 35%;
+  height: 40px;
+  margin: 10px;
+  color: white;
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.button--big {
+  width: 60%;
+}
+
+.button:hover {
+  border: none;
+  color: black;
+  background-color: #fff;
+}
+
 .fab {
   font-size: $xl;
   padding: 5px;
@@ -105,4 +132,9 @@
 
 .fa-npm {
   color: #c53735;
+}
+
+.fab--mini {
+  font-size: $xs;
+  margin-left: 6px;
 }
