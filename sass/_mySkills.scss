@@ -2,6 +2,7 @@
   background-color: $mainBackgorund;
   padding: 40px 0;
   color: white;
+  text-align: center;
 
   &__item-wrapper {
     position: relative;
@@ -56,7 +57,7 @@
   }
 
   &__item::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
