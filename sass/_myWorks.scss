@@ -2,4 +2,8 @@
   background-color: $mainBackgorund;
   padding: 40px 0;
   color: white;
+
+  &__item-container {
+    margin: auto;
+  }
 }

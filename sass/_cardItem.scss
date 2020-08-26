@@ -1,0 +1,59 @@
+.card-item {
+  position: relative;
+  margin: 20px auto;
+  height: 250px;
+  max-height: 400px;
+  max-width: 600px;
+  z-index: 2;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  text-align: center;
+
+  &::before,
+  &--background-red::before,
+  &--background-blue::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: #000000, $alpha: 0.7);
+    z-index: -1;
+  }
+
+  &--background-red::before {
+    background: rgba($color: $mainRed, $alpha: 0.7);
+  }
+
+  &--background-blue::before {
+    background: rgba($color: darken($mainBlue, 30%), $alpha: 0.7);
+  }
+
+  &__title {
+    font-size: $m;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+  }
+
+  &__button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+  }
+}
