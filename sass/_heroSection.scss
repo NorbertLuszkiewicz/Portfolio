@@ -22,19 +22,39 @@
   margin: auto;
   padding: 30% 5%;
   z-index: 1;
+  @media (min-width: 1000px) {
+    padding: 250px 50px;
+  }
+
+  &__title-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   &__logo {
     display: none;
+    width: 150px;
+    @media (min-width: 1000px) {
+      display: block;
+    }
   }
 
   &__main-text {
     font-size: $xl;
+    @media (min-width: 1000px) {
+      font-size: $xxl;
+      width: 400px;
+    }
   }
 
   &__text {
     margin: 15px 0;
     font-size: $s;
     text-shadow: 2px 2px 4px rgba($color: #fff, $alpha: 0.3);
+    @media (min-width: 1000px) {
+      font-size: $m;
+      margin: 15px 150px;
+    }
   }
 
   &__gif-wrapper {
@@ -43,6 +63,12 @@
     left: 5%;
     width: 90%;
     margin: 20px auto;
+    @media (min-width: 1000px) {
+      bottom: 100px;
+      left: auto;
+      right: 10px;
+      width: 500px;
+    }
   }
 
   &__gif {
@@ -52,19 +78,27 @@
     width: 100%;
     max-width: 500px;
     z-index: 1;
+    @media (min-width: 1000px) {
+      transform: scale(-1, 1);
+    }
   }
 
   &__blob {
     display: block;
     position: absolute;
+    margin: auto;
     top: 27px;
     left: 8%;
     z-index: 0;
     width: 90%;
-    max-width: 560px;
+    max-width: 660px;
     transition: 2s;
     transform: rotate(200deg) scale(0.9);
     animation: rotateBlob 10s infinite;
+    @media (min-width: 1000px) {
+      top: 50px;
+      left: 30px;
+    }
   }
 }
 
