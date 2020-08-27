@@ -41,10 +41,12 @@
 }
 
 .text {
-  font-size: $xs;
+  font-size: $xxs;
   line-height: 1.2;
   padding: 10px 5%;
   width: 100%;
+  max-width: 600px;
+  margin: auto;
 }
 
 .title-wrapper {
@@ -81,7 +83,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: $xs;
+  font-size: $xxs;
   width: 35%;
   height: 40px;
   margin: 10px;
@@ -90,7 +92,7 @@
   border: 3px solid white;
   border-radius: 10px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: $bold;
 }
 
 .button--big {
@@ -137,6 +139,6 @@
 }
 
 .fab--mini {
-  font-size: $xs;
+  font-size: $xxs;
   margin-left: 6px;
 }

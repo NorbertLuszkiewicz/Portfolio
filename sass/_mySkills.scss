@@ -4,6 +4,16 @@
   color: white;
   text-align: center;
 
+  &__container {
+    @media (min-width: 1400px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      width: 1300px;
+    }
+  }
+
   &__item-wrapper {
     position: relative;
     width: 90%;
@@ -16,6 +26,10 @@
     border: 5px solid $mainRed;
     border-radius: 15px;
     padding: 5px;
+    @media (min-width: 1400px) {
+      padding-top: 20px;
+      max-width: 500px;
+    }
   }
 
   &__item-wrapper--color {
@@ -35,6 +49,10 @@
     white-space: nowrap;
     border-radius: 7px;
     padding: 0 5px;
+    @media (min-width: 1400px) {
+      font-size: $m;
+      top: -$m/2;
+    }
   }
 
   &__box-name--color {
@@ -79,10 +97,13 @@
   }
 
   &__list-item {
-    font-size: $xs;
+    font-size: $xxs;
     line-height: 1.4;
     text-align: center;
-    font-weight: 600;
+    font-weight: $bold;
+    @media (min-width: 1400px) {
+      font-size: $xs;
+    }
   }
 
   &__subtitle {
@@ -90,5 +111,8 @@
     margin: 10px auto;
     color: $mainBlue;
     text-shadow: 1px 1px 2px rgba($color: #fff, $alpha: 0.7);
+    @media (min-width: 1400px) {
+      font-size: $m;
+    }
   }
 }

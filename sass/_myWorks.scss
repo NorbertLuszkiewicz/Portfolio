@@ -2,8 +2,15 @@
   background-color: $mainBackgorund;
   padding: 40px 0;
   color: white;
+  margin: auto;
 
   &__item-container {
     margin: auto;
+    max-width: 1220px;
+    @media (min-width: 1000px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 25px;
+    }
   }
 }
