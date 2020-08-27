@@ -1,0 +1,29 @@
+.contact {
+  padding: 50px 5%;
+  text-align: center;
+
+  &__text {
+    font-size: 2.2rem;
+    margin: 25px auto;
+    max-width: 600px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__item {
+    font-size: $xl;
+    font-weight: $bold;
+    text-decoration: none;
+    color: $mainBlue;
+    transition: color 0.2s ease;
+    cursor: pointer;
+  }
+
+  &__item:hover {
+    color: $mainRed;
+  }
+}
