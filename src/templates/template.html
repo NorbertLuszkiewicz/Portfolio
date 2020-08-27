@@ -19,11 +19,14 @@
 
   <body>
     <section class="hero">
-      <img class="hero__logo" src="images/logo-white.png" alt="animated blob" />
-      <h1 class="hero__main-text">Norbert Łuszkiewicz</h1>
+      <div class="hero__title-wrapper">
+        <img class="hero__logo" src="images/logo-white.png" alt="animated blob" />
+        <h1 class="hero__main-text">Norbert Łuszkiewicz</h1>
+      </div>
       <p class="hero__text">
         <span class="color-red">Front-end </span><span class="color-blue">developer</span> 💻
       </p>
+
       <div class="hero__gif-wrapper">
         <img class="hero__gif" src="images/programer.gif" alt="men working on laptop" />
         <img class="hero__blob" src="images/blob.svg" alt="animated blob" />
@@ -117,73 +120,144 @@
           <img src="images/logo-white2.png" alt="logo" class="logo2" />
         </div>
         <h2 class="title">My works 👨🏻‍💻</h2>
-        <div class="my-works__item-container">
-          <div class="card-item">
-            <img class="card-item__background" src="images/favnote.png" alt="
-            application screenshot favnote">
-            <div class="card-item__text-weapper">
-              <h3 class="card-item__title"> Favnote</h3>
-              <p class="text">My biggest application,
-                Website made in react with working login and registration 
-                If you want to have saved your favorite twitter accounts, note , articles then this app is for you
-              </p>
-            </div>
-            <div class="card-item__button-wrapper">
-              <a class="button" href="https://github.com/NorbertLuszkiewicz/Favnote">Github<i class="fab fa-github fab--mini"></i></a>
-              <a class="button" href="https://favnoteapp.netlify.app/login">Demo<i class="fas fa-play-circle fab--mini"></i> </a>
-            </div>
+      </div>
+      <div class="my-works__item-container">
+        <div class="card-item">
+          <img
+            class="card-item__background"
+            src="images/favnote.png"
+            alt="
+            application screenshot favnote"
+          />
+          <div class="card-item__text-weapper">
+            <h3 class="card-item__title">Favnote</h3>
+            <p class="text">
+              My biggest application, Website made in react with working login and registration If
+              you want to have saved your favorite twitter accounts, note , articles then this app
+              is for you
+            </p>
           </div>
-          <div class="card-item card-item--background-red">
-            <img class="card-item__background" src="images/cakee.png" alt="
-            application screenshot cakee">
-            <div class="card-item__text-weapper">
-              <h3 class="card-item__title">Cakee</h3>
-              <p class="text">Onepage ,
-                site demo about healthy eating, It created in html scss and</p>
-            </div>
-            <div class="card-item__button-wrapper">
-              <a class="button" href="https://github.com/NorbertLuszkiewicz/Cakee-onepage">Github<i class="fab fa-github fab--mini"></i></a>
-              <a class="button" href="https://norbertluszkiewicz.github.io/Cakee-onepage/">Demo<i class="fas fa-play-circle fab--mini"></i> </a>
-            </div>
-          </div>
-          <div class="card-item">
-            <img class="card-item__background" src="images/adminboard.png" alt="
-            application screenshot admin board">
-            <div class="card-item__text-weapper">
-              <h3 class="card-item__title">AdminBoard</h3>
-              <p class="text">Website created in React,demo showing the functioning of the admin board, adding the removal of orders and products </p>
-            </div>
-            <div class="card-item__button-wrapper">
-              <a class="button" href="https://github.com/NorbertLuszkiewicz/ReactAdminBoard">Github<i class="fab fa-github fab--mini"></i></a>
-              <a class="button" href="https://adminboard.netlify.app/">Demo<i class="fas fa-play-circle fab--mini"></i> </a>
-            </div>
-          </div>
-          <div class="card-item">
-            <img class="card-item__background" src="images/schoolgradingcalculator.png" alt="
-            application screenshot school grading calculator">
-            <div class="card-item__text-weapper">
-              <h3 class="card-item__title">Portfolio</h3>
-              <p class="text"> Just this website, 
-                shows my love for the front-end, Deployed on netlify. </p>
-            </div>
-            <div class="card-item__button-wrapper">
-              <a class="button button--big" href="https://github.com/NorbertLuszkiewicz/Portfolio">Github<i class="fab fa-github fab--mini"></i></a>
-            </div>
-          </div>
-          <div class="card-item card-item--background-blue">
-            <img class="card-item__background" src="images/schoolgradingcalculator.png" alt="
-            application screenshot school grading calculator">
-            <div class="card-item__text-weapper">
-              <h3 class="card-item__title">School Grading Calculator</h3>
-              <p class="text">Website created in Js, html, css. Is used for calculating the average of the subjects</p>
-            </div>
-            <div class="card-item__button-wrapper">
-              <a class="button" href="https://github.com/NorbertLuszkiewicz/SchoolGradingCalculator">Github<i class="fab fa-github fab--mini"></i></a>
-              <a class="button" href="https://5f149ac809fd44bcfce21e9c--schoolgradingcalculator.netlify.app/">Demo<i class="fas fa-play-circle fab--mini"></i> </a>
-            </div>
+          <div class="card-item__button-wrapper">
+            <a class="button" href="https://github.com/NorbertLuszkiewicz/Favnote"
+              >Github<i class="fab fa-github fab--mini"></i
+            ></a>
+            <a class="button" href="https://favnoteapp.netlify.app/login"
+              >Demo<i class="fas fa-play-circle fab--mini"></i>
+            </a>
           </div>
         </div>
+        <div class="card-item card-item--background-red">
+          <img
+            class="card-item__background"
+            src="images/cakee.png"
+            alt="
+            application screenshot cakee"
+          />
+          <div class="card-item__text-weapper">
+            <h3 class="card-item__title">Cakee</h3>
+            <p class="text">
+              Onepage , site demo about healthy eating, It created in html scss and
+            </p>
+          </div>
+          <div class="card-item__button-wrapper">
+            <a class="button" href="https://github.com/NorbertLuszkiewicz/Cakee-onepage"
+              >Github<i class="fab fa-github fab--mini"></i
+            ></a>
+            <a class="button" href="https://norbertluszkiewicz.github.io/Cakee-onepage/"
+              >Demo<i class="fas fa-play-circle fab--mini"></i>
+            </a>
+          </div>
+        </div>
+        <div class="card-item">
+          <img
+            class="card-item__background"
+            src="images/adminboard.png"
+            alt="
+            application screenshot admin board"
+          />
+          <div class="card-item__text-weapper">
+            <h3 class="card-item__title">AdminBoard</h3>
+            <p class="text">
+              Website created in React,demo showing the functioning of the admin board, adding the
+              removal of orders and products
+            </p>
+          </div>
+          <div class="card-item__button-wrapper">
+            <a class="button" href="https://github.com/NorbertLuszkiewicz/ReactAdminBoard"
+              >Github<i class="fab fa-github fab--mini"></i
+            ></a>
+            <a class="button" href="https://adminboard.netlify.app/"
+              >Demo<i class="fas fa-play-circle fab--mini"></i>
+            </a>
+          </div>
+        </div>
+        <div class="card-item">
+          <img
+            class="card-item__background"
+            src="images/schoolgradingcalculator.png"
+            alt="
+            application screenshot school grading calculator"
+          />
+          <div class="card-item__text-weapper">
+            <h3 class="card-item__title">Portfolio</h3>
+            <p class="text">
+              Just this website, shows my love for the front-end, Deployed on netlify.
+            </p>
+          </div>
+          <div class="card-item__button-wrapper">
+            <a class="button button--big" href="https://github.com/NorbertLuszkiewicz/Portfolio"
+              >Github<i class="fab fa-github fab--mini"></i
+            ></a>
+          </div>
+        </div>
+        <div class="card-item card-item--background-blue">
+          <img
+            class="card-item__background"
+            src="images/schoolgradingcalculator.png"
+            alt="
+            application screenshot school grading calculator"
+          />
+          <div class="card-item__text-weapper">
+            <h3 class="card-item__title">School Grading Calculator</h3>
+            <p class="text">
+              Website created in Js, html, css. Is used for calculating the average of the subjects
+            </p>
+          </div>
+          <div class="card-item__button-wrapper">
+            <a class="button" href="https://github.com/NorbertLuszkiewicz/SchoolGradingCalculator"
+              >Github<i class="fab fa-github fab--mini"></i
+            ></a>
+            <a
+              class="button"
+              href="https://5f149ac809fd44bcfce21e9c--schoolgradingcalculator.netlify.app/"
+              >Demo<i class="fas fa-play-circle fab--mini"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
-
+    <section class="contact">
+      <h2 class="title">Contact 📞</h2>
+      <p class="contact__text">
+        if you want to hire me in your company, write to
+        <strong>norbertluszkiewicz00@gmail.com </strong>. I'm waiting for your message!
+      </p>
+      <div class="contact__container">
+        <a class="contact__item" href="https://github.com/NorbertLuszkiewicz"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          class="contact__item"
+          href="https://www.linkedin.com/in/norbert-%C5%82uszkiewicz-75b0891b3/"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a class="contact__item" href="">CV</a>
+      </div>
+    </section>
+    <footer class="footer">
+      Created by <strong> Norbert Łuszkiewicz </strong> Animation made by
+      <a class="footer__link" href="https://dribbble.com/Pudge1996">Pudge</a> © 2020 all rights
+      reserved
+    </footer>
   </body>
 </html>
