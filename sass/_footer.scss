@@ -1,0 +1,16 @@
+.footer {
+  padding: 10px;
+  color: white;
+  background-color: $mainBackgorund;
+  text-align: center;
+
+  &__link {
+    color: white;
+    font-weight: $bold;
+    text-decoration: none;
+  }
+
+  &__link:hover {
+    color: $mainRed;
+  }
+}
