@@ -1,6 +1,6 @@
 .card-item {
   position: relative;
-  margin: 10px 0;
+  margin: 10px auto;
   height: 250px;
   max-width: 600px;
   z-index: 2;
@@ -9,6 +9,10 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  @media (min-width: 1000px) {
+    margin: 10px 0;
+  }
 
   &::before,
   &--background-red::before,
